@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ericnbello/manage-landing-page)
-- Live Site URL: [Add live site URL here](https://manage-landing-page-ericnbello.netlify.app)
+- Solution URL: [https://github.com/ericnbello/manage-landing-page](https://github.com/ericnbello/manage-landing-page)
+- Live Site URL: [https://manage-landing-page-ericnbello.netlify.app](https://manage-landing-page-ericnbello.netlify.app)
 
 ### Built with
 
