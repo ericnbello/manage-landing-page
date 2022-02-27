@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Manage landing page | Eric Bello</title>
+</head>
+<body>
+  <main class="flex flex-col">
+    <!--Navigation-->
+    <nav class="bg-[url('images/bg-tablet-pattern.svg')] bg-[length:30rem_30rem] bg-[right_-9.5rem_top_-8rem] md:bg-[length:35rem_35rem] md:bg-[right_-5rem_top_-3rem] bg-no-repeat py-10 md:px-10">
+      <div class="mx-auto px-10">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+              <!-- Website Logo -->
+              <a href="#" class="py-4 px-2">
+                <img src="/images/logo.svg" alt="Logo">
+              </a>
+            </div>
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex items-center space-x-1">
+              <a href="#" class="py-4 px-2 text-gray-500 hover:text-[#f25f3a] focus:text-[#f25f3a]">Pricing</a>
+              <a href="#" class="py-4 px-2 text-gray-500 hover:text-[#f25f3a] focus:text-[#f25f3a] transition duration-300">Product</a>
+              <a href="#" class="py-4 px-2 text-gray-500 hover:text-[#f25f3a] focus:text-[#f25f3a] transition duration-300">About Us</a>
+              <a href="#" class="py-4 px-2 text-gray-500 hover:text-[#f25f3a] focus:text-[#f25f3a] transition duration-300">Careers</a>
+              <a href="#" class="py-4 px-2 text-gray-500 hover:text-[#f25f3a] focus:text-[#f25f3a] transition duration-300">Community</a>
+            </div>
+            <!-- Secondary Navbar items -->
+            <div class="hidden md:flex items-center space-x-3 ">
+              <!-- <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a> -->
+              <a href="#" class="py-4 px-6 text-xs text-white bg-[#f25f3a] rounded-full  hover:opacity-75 shadow-lg hover:shadow-lg transition duration-300">Get Started</a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex flex-col justify-center">
+              <button id="mobile-menu-button" class="outline-none">
+                <img src="/images/icon-hamburger.svg"></img>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div id="mobile-menu" class="hidden text-center bg-white">
+        <ul class="">
+          <li class="active">
+            <a href="index.html" class="block text-sm px-2 py-4 text-white text-[#f25f3a] font-semibold">Pricing</a>
+          </li>
+          <li>
+            <a href="#services" class="block text-sm px-2 py-4 hover:text-[#f25f3a] transition duration-300">Product</a>
+          </li>
+          <li>
+            <a href="#about" class="block text-sm px-2 py-4 hover:text-[#f25f3a] transition duration-300">About Us</a>
+          </li>
+          <li>
+            <a href="#contact" class="block text-sm px-2 py-4 hover:text-[#f25f3a] transition duration-300">Careers</a>
+          </li>
+          <li>
+            <a href="#contact" class="block text-sm px-2 py-4 hover:text-[#f25f3a] transition duration-300">Community</a>
+          </li>
+          <!-- <li> -->
+            <!-- Secondary Navbar items -->
+            <!-- <div class="hidden md:flex items-center space-x-3 "> -->
+              <!-- <a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a> -->
+              <!-- <a href="#" class="py-2 px-2 font-medium text-white bg-green-500 rounded-full hover:bg-green-400 transition duration-300">Get Started</a> -->
+            <!-- </div> -->
+          <!-- </li> -->
+        </ul>
+      </div>
+    </nav>
+    <!---->
+
+    <!--Intro Section-->
+    <div class="flex flex-col md:flex-row-reverse bg-[url('images/bg-tablet-pattern.svg')] bg-[length:30rem_30rem] bg-[right_-6rem_top_-13rem] md:bg-[length:35rem_35rem] md:bg-[right_-2.5rem_top_-9rem] bg-no-repeat gap-8 px-10 md:px-20 pt-0 pb-10">
+      <div class="md:w-1/2">
+        <img src="/images/illustration-intro.svg">
+      </div>
+      <div class="flex flex-col justify-center md:w-1/2 gap-y-6 bg-[url('images/bg-tablet-pattern.svg')] bg-[length:30rem_30rem] bg-[right_-6rem_top_-13rem] bg-no-repeat md:bg-none">
+        <h1 class="text-center md:text-left text-4xl md:text-4xl font-semibold md:w-3/4">Bring everyone together to build better products.</h1>
+        <p class="text-center md:text-left text-lg text-[#9095a7] md:text-sm md:w-2/3">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <div class="flex flex-row justify-center md:justify-start">
+          <a href="#" class="py-4 px-6 text-xs text-white bg-[#f25f3a] rounded-full  hover:opacity-75 shadow-lg hover:shadow-lg transition duration-300">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <!---->
+
+    <!--Detail Section-->
+    <div class="flex flex-col md:flex-row bg-[url('images/bg-tablet-pattern.svg')] bg-[length:25rem_25rem] bg-[length:35rem_35rem] bg-[right_-14rem_top_-23rem] md:bg-[left_-20rem_bottom_-20rem] bg-no-repeat px-10 py-10 md:px-20">
+      <div class="flex flex-col justify-start md:w-1/2 gap-y-6">
+        <h2 class="text-center md:text-left text-4xl md:text-3xl font-bold md:w-3/4">What’s different about Manage?</h2>
+        <p class="text-center md:text-left text-lg text-[#9095a7] md:text-sm md:w-2/3 pt-0 pb-6 md:py-3 justify-center">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+      </div>
+      <div class="flex flex-col gap-10 md:w-1/2">
+        <div class="flex flex-col">
+          <div class="flex md:gap-10">
+            <div class="flex flex-col justify-center md:justify-start">
+              <a class="py-2 px-5 z-10 font-medium text-white rounded-full bg-[#f25f3a] w-15">01</a>
+            </div>
+            <div class="w-full">
+              <h3 class="py-2 pl-10 md:pl-0 bg-[#ffefeb] -ml-5 md:ml-0 z-0 font-bold md:bg-transparent text-black">
+                Track company-wide progress
+              </h3>
+              <p class="hidden md:flex md:w-2/3 text-[#9095a7]">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+            </div>
+          </div>
+          <div class="py-3 md:hidden">
+            <p class="text-[#9095a7]">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+          </div>
+        </div>            
+        <div class="flex flex-col">
+          <div class="flex md:gap-10">
+            <div class="flex flex-col justify-center md:justify-start">
+              <a class="py-2 px-5 z-10 font-medium text-white rounded-full bg-[#f25f3a] w-15">02</a>
+            </div>
+            <div class="w-full">
+              <h3 class="py-2 pl-10 md:pl-0 bg-[#ffefeb] -ml-5 md:ml-0 z-0 font-bold md:bg-transparent text-black">
+                Advanced built-in reports
+              </h3>
+              <p class="hidden md:flex md:w-2/3 text-[#9095a7]">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+            </div>
+          </div>
+          <div class="py-3 md:hidden">
+            <p class="text-[#9095a7]">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex md:gap-10">
+            <div class="flex flex-col justify-center md:justify-start">
+              <a class="py-2 px-5 z-10 font-medium text-white rounded-full bg-[#f25f3a] w-15">03</a>
+            </div>
+            <div class="w-full">
+              <h3 class="py-2 pl-10 md:pl-0 bg-[#ffefeb] -ml-5 md:ml-0 z-0 font-bold md:bg-transparent text-black">
+                Everything you need in one place
+              </h3>
+              <p class="hidden md:flex md:w-2/3 text-[#9095a7]">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+            </div>
+          </div>
+          <div class="py-3 md:hidden">
+            <p class="text-[#9095a7]">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+
+    <!--Testimonial Section-->
+    <div class="flex flex-col p-6 md:bg-[url('images/bg-tablet-pattern.svg')] md:bg-[length:35rem_35rem] md:bg-[left_-20rem_top_-15rem] bg-no-repeat">
+      <div class="flex justify-center pt-6">
+        <h3 class="text-3xl font-bold">What they’ve said</h3>
+      </div>
+
+       <!--Testimonials Swiper -->
+      <div class="container mx-auto mt-16 swiper mySwiper">
+        <div class=" swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center relative">
+              <div class="absolute -mt-9">
+                <img src="/images/avatar-anisha.png" width="75" height="75">
+              </div>
+              <div class="flex flex-col justify-center bg-[#ffefeb] text-center p-6 h-[15rem]">
+                <h4 class="text-lg py-6">Anisha Li</h4>
+                <p class="text-sm text-[#9095a7]">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center relative my-auto">
+              <div class="absolute -mt-9">
+                <img src="/images/avatar-ali.png" width="75" height="75">
+              </div>
+              <div class="flex flex-col justify-center bg-[#ffefeb] text-center p-6 h-[15rem]">
+                <h4 class="text-lg py-6">Ali Bravo</h4>
+                <p class="text-sm text-[#9095a7]">“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center relative">
+              <div class="absolute -mt-9">
+                <img src="/images/avatar-richard.png" width="75" height="75">
+              </div>
+              <div class="flex flex-col justify-center bg-[#ffefeb] text-center p-6 h-[15rem]">
+                <h4 class="text-lg py-6">Richard Watts</h4>
+                <p class="text-sm text-[#9095a7]">“Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center relative">
+              <div class="absolute -mt-9">
+                <img src="/images/avatar-shanai.png" width="75" height="75">
+              </div>
+              <div class="flex flex-col justify-center bg-[#ffefeb] text-center p-6 h-[15rem]">
+                <h4 class="text-lg py-6">Shanai Gough</h4>
+                <p class="text-sm text-[#9095a7]">“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="flex justify-center py-10">
+        <a href="#" class="py-4 px-6 text-xs text-white bg-[#f25f3a] rounded-full  hover:opacity-75 shadow-lg hover:shadow-lg transition duration-300">Get Started</a>
+      </div>
+      </div>
+    </div>
+    <!-- <div class="flex justify-center pb-6">
+      <a href="#" class="py-4 px-6 text-xs text-white bg-[#f25f3a] rounded-full  hover:opacity-75 shadow-lg hover:shadow-lg transition duration-300">Get Started</a>
+    </div> --> 
+
+    <!--Bottom Banner-->
+    <div class="flex flex-col justify-center md:flex-row md:justify-between p-6 py-10 md:px-20 items-center bg-[#f25f3a] text-white">
+      <div class="flex justify-center text-center md:text-left md:justify-start">
+        <h2 class="text-3xl font-bold py-6 md:w-2/3">Simplify how your team works today.</h2>
+      </div>
+      <div class="flex md:justify-start">
+        <a href="#" class="py-4 px-6 text-xs text-[#f25f3a] bg-white rounded-full  hover:opacity-75 shadow-lg hover:shadow-lg transition duration-300">Get Started</a>
+      </div>
+    </div>
+    <!---->
+  </main>
+</body>
+<footer class="bg-[#242d52] text-[#fafafa] py-10">
+  <div class="flex flex-col-reverse md:flex-row justify-between p-6 py-10 md:px-20 gap-10">
+    <div id="logo-socials" class="flex flex-col justify-between md:flex-col-reverse gap-10 md:gap-20">
+      <div class="flex flex-row justify-center md:justify-start gap-8">
+        <a href="#"><img src="/images/icon-facebook.svg" width="25" height="25"></a>
+        <a href="#"><img src="/images/icon-youtube.svg" width="25" height="25"></a>
+        <a href="#"><img src="/images/icon-twitter.svg" width="25" height="25"></a>
+        <a href="#"><img src="/images/icon-pinterest.svg" width="25" height="25"></a>
+        <a href="#"><img src="/images/icon-instagram.svg" width="25" height="25"></a>
+      </div>
+      <div class="flex justify-center md:justify-start">
+        <img src="/images/logo-footer.svg" width="150" height="150">
+      </div>
+    </div>
+    <div class="flex flex-row justify-center">
+      <div class="grid grid-cols-2 gap-10 text-sm">
+        <div class="flex flex-col gap-y-2">
+          <a href="#">Home</a>
+          <a href="#">Pricing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <a href="#">Careers</a>
+          <a href="#">Community</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div> 
+    </div>
+    <div class="flex flex-col gap-10 md:gap-20">
+      <form class="flex flex-row col-wrap justify-center md:justify-start gap-2" name="signup-form" id="signup-form" novalidate>
+        <label>
+          <input class="py-4 px-6 rounded-full text-sm text-black" type="email" id="email" name="email" required="" placeholder="Updates in your inbox…">
+        </label>
+        </label>
+        <button class="py-2 px-2 text-sm uppercase text-white text-center bg-[#f25f3a] rounded-full hover:opacity-75 transition duration-300 w-20" onclick="validateForm()" id="signup-button" type="submit" method="post">Go</button>
+      </form>
+      <div class="hidden md:flex md:justify-end">
+        <p class="text-sm">
+          Copyright &copy; 
+          <script>document.write(new Date().getFullYear());</script>. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="md:hidden flex justify-center">
+    <p class="text-sm">
+      Copyright &copy; 
+      <script>document.write(new Date().getFullYear());</script>. All Rights Reserved
+    </p>
+  </div>
+</footer>
+
+<script src="./scripts.js"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!--JS Scripts-->
+<script>
+  //Initialize Swiper
+  var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+          }
+        },
+      grid: {
+          rows: 1,
+      },
+      spaceBetween: 30,
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+  });
+</script>
+
+</html>
